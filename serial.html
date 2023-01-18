@@ -11,7 +11,7 @@
 <link rel="alternate" data-savepage-href="https://ridegemini.com/en/warranty/" href="" hreflang="en">
 <script data-savepage-type="text/javascript" type="text/plain"></script>
 	<!-- This site is optimized with the Yoast SEO plugin v19.13 - https://yoast.com/wordpress/plugins/seo/ -->
-	<title>WARRANTY es - GEMINI</title>
+	<title>Serial Number Validator</title>
 	<link rel="canonical" data-savepage-href="https://ridegemini.com/en/warranty/" href="">
 	<meta property="og:locale" content="en_GB">
 	<meta property="og:locale:alternate" content="es_ES">
@@ -1583,7 +1583,18 @@ p.demo_store{background-color:#ffbf51;color:#4a3107;}.woocommerce small.note{col
 					<div id="et_mobile_nav_menu">
 				<div class="mobile_nav closed">
 					<span class="select_page">Select Page</span>
-					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+					<script>
+					function toggleburger() {
+						let m = document.getElementById("mobile_menu");
+						console.log(m.style.display);
+						if (m.style.display == "none" || m.style.display == "") {
+							m.style.display = "block";
+						} else {
+						m.style.display = "none";
+						}
+					}
+					</script>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle" onclick="toggleburger();"></span>
 				<ul id="mobile_menu" class="et_mobile_menu"><li id="menu-item-4352" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4352 et_first_mobile_item"><a href="https://ridegemini.com/en/components/">SHOP</a></li>
 <li id="menu-item-4355" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4355"><a href="https://ridegemini.com/en/behind-gemini_/">GEMINI</a></li>
 <li id="menu-item-4353" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4353"><a href="https://ridegemini.com/en/lab_/">LAB</a></li>
@@ -1622,8 +1633,9 @@ p.demo_store{background-color:#ffbf51;color:#4a3107;}.woocommerce small.note{col
 				.par {
 					margin: 0;
 					font-weight: bold;
-					font-size: 2rem;
+					font-size: 1rem;
 					text-align: center;
+					padding-bottom: 0.5rem;
 				}
 				.par + p {
 					text-align: center;
@@ -1646,13 +1658,13 @@ p.demo_store{background-color:#ffbf51;color:#4a3107;}.woocommerce small.note{col
 				
 				
 				
-				<div style="padding-left: 20%;padding-right:20%;margin-top: -100px;">
+				<div style="padding-left: 20%;padding-right:20%;margin-top:-20px;">
 				<h1 style="text-align: center;">Serial Number Validator</h1>
 				<div id="spinner" class="spinner-container">
 					<img class="spinner-image" src="https://c.tenor.com/I6kN-6X7nhAAAAAj/loading-buffering.gif"/>
 				</div>
 					
-					<div id="serial-input" >
+					<div id="serial-input" style="padding-bottom:5rem">
 					<form action="">
 					<br>
 					  <label for="fname">Serial Number:</label><br>
@@ -1686,14 +1698,14 @@ p.demo_store{background-color:#ffbf51;color:#4a3107;}.woocommerce small.note{col
 					<p class="par">Manufacture Date</p>
 					<p id="rdate" >Missing</p><br><br><br>
 					
-					<div style="text-align: center;">
+					<div style="margin-top:-40px">
 						<form action="">
 						  <input class="et_pb_contact_submit et_pb_button" type="submit" value="Search Again" style="margin-top:1rem auto;padding: 10px 25px 10px 25px">
 						</form>
 					</div>
 				</div>
 					
-				<div style="text-align:center"><img src="https://i.imgur.com/QKi5ZPj.png" style="width:100%"></div>
+				<div style="text-align:center;padding-top:2rem;"><img src="https://i.imgur.com/QKi5ZPj.png" style="width:100%"></div>
 				</div>
 				
 				<script>
@@ -1755,7 +1767,7 @@ p.demo_store{background-color:#ffbf51;color:#4a3107;}.woocommerce small.note{col
 			var tmp = "";
 
 			switch (number.charAt(0)) {
-				case '1': tmp = "Gemini Propus"; break;
+				case '1': tmp = "Gemini PRÖPUS MTB Carbon Handlebar"; break;
 				default: badresult = true;
 			}
 			document.getElementById("rname").innerHTML = tmp;
